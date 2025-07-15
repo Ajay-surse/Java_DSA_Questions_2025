@@ -2,6 +2,8 @@ package Day03;
 
 public class FindMissingNumber {
 
+    // Leetcode link : https://leetcode.com/problems/missing-number/description/
+
     public static int findMissing(int nums[],int n){
         int xor1=0,xor2=0;
         for(int i=0; i<n-1; i++){

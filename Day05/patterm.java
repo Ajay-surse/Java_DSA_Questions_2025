@@ -51,7 +51,26 @@ class pattern{
             }
             System.out.println();
         }
-        
+    }
+    public static void pattern6(int n){
+        /*
+         * * * * *
+           * * *
+             * 
+         */
+
+         for(int i=0; i<n; i++){  // Rows
+            for(int j=0; j<i; j++){
+                System.out.print(" ");
+            }
+            for(int k=0; k<2*n-(2*i+1); k++){
+                System.out.print("*");
+            }
+            for(int l=0; l<i; l++){
+                System.out.print(" ");
+            }
+            System.out.println();
+         }
     }
     
     public static void main(String[] args) {
@@ -65,6 +84,8 @@ class pattern{
         patter3(n);
         System.out.println("");
         pattern5(n);
+        System.out.println("");
+        pattern6(n);
        
     }
 }

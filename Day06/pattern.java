@@ -21,7 +21,7 @@ class pattern {
                                                 (2*4-7) = 1 -> 1 to 1
      */
 
-    public static void patter1(int n){
+    public static void pattern1(int n){
         for(int i=1; i<=2*n-1; i++){
             int starts = i;
             if(i>n) starts = 2*n-i;
@@ -32,11 +32,36 @@ class pattern {
         }
         
     }
+
+
+    /*
+      1 
+      0 1 
+      1 0 1
+      0 1 0 1 
+      1 0 1 0 1 
+     
+     */
+
+     public static void pattern2(int n){
+        int starts = 1;
+        for(int i=0; i<n; i++){
+            if(i%2 == 0) starts = 1;
+            else starts = 0;
+            for(int j=0; j<=i; j++){
+                System.out.print(starts + " ");
+                starts = 1 - starts;
+            }
+            System.out.println();
+        }
+     }
     public static void main(String[] args){
         System.out.println(" Enter n number");
         Scanner sc = new Scanner(System.in);
         int n= sc.nextInt();
-        patter1(n);
+        //pattern1(n);
+        pattern2(n);
+
     }
     
 }

@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class CountDigit {
   // 123
     public static int countDigit(int number){
+        // NOTE : if the number of iteration is based on division then tine complexity is logarithmic 
         int lastDigit = 0;
         int count = 0;
         // using extraction we can solve the problem 

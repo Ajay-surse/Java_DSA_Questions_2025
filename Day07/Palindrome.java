@@ -11,8 +11,8 @@ public class Palindrome {
         int lastDigit = 0;
         int revese = 0;
         while (n!=0) {
-            lastDigit = n%10;
-            revese = (revese*10) + lastDigit;
+            lastDigit = n%10;  // 1234   // 4 
+            revese = (revese*10) + lastDigit;  
             n = n/10;
         }
         if(original != revese){

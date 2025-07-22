@@ -23,8 +23,8 @@ public class printAllDivisiors {
                 divisors.add(i);
 
                 if(i!=n/i){
-                    divisors.add(n/i);
-                }
+                     divisors.add(n/i);
+                 }
             }
         }
         return divisors;

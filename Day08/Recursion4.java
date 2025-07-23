@@ -15,7 +15,6 @@ public class Recursion4 {
         int number = sc.nextInt();   //5 
         int i=0;
         printReverse(i, number);  // (0,5)
-        
     }
     
 }

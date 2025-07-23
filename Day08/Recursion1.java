@@ -10,13 +10,13 @@ public class Recursion1 {
             return;
         }
         System.out.println("Ajay"); 
-        printnumtime(i+1,n); 
+        printnumtime(i+1,n); //(2,5)
 
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();   
-        printnumtime(1,n);  
+        printnumtime(1,n);  //(1,5)
     }
     
 }
